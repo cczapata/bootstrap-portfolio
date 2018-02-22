@@ -2,12 +2,20 @@ body{
   font-size: 18px;
 
 }
-.navbar-header {
-  height: 50px;
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 80px solid transparent;
+    border-bottom: 20px;
+
 
 }
+
+
 #logo {
-  font-size: 35px;
+  font-size: 50px;
+
 }
 
 #pic {
