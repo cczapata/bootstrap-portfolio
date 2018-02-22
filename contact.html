@@ -1,87 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
+  <head>
 
-<head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <title>Bootstrap Basic Portfolio</title>
 
-  <title>Cynthia</title>
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <body>
 
-</head>
-<body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
 
-
-  <div class="container">
-  <div class="row">
-  <div class="col-12">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Cynthia</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarNav">
-           <ul class="navbar-nav">
-             <li class="nav-item active">
-               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#">portfolio</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link" href="#">contact</a>
-             </li>
-           </ul>
-         </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" id="logo">Your Name</a>
         </div>
-      </nav>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <li><a href="contact.html">Contact</a></li><span class="pipe"></span>
+            <li><a href="portfolio.html">Portfolio</a></li><span class="pipe"></span>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
 
-	<div id="main-container" class="container">
-		<section class="main-section">
-			<h1>Contact</h1>
+    <!-- Start of content wrap -->
+    <div class="wrap">
+      <div class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <form class="contact-form">
+              <h1 class="contact-form-header">Contact</h1>
+              <hr class="contact-hr"/>
+              <div class="form-group">
+                <label class="label-name" for="name">Name</label>
+                <input type="text" id="name_input" name="user_name" />
+              </div>
+              <div class="form-group">
+                <label class="label-mail" for="mail">E-mail</label>
+                <input type="email" id="mail_input" name="user_mail" />
+              </div>
+              <div class="form-group">
+                <label class="label-msg" for="msg">Message</label><br />
+                <textarea id="msg" name="user_message_input" cols=600></textarea>
+              </div>
+              <button class="submit-btn">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-4">
 
-			<form id="contact-form">
-				<ul>
-					<li>
-						<label for="name">Name</label>
-						<input type="text" name="name" id="name" placeholder="Jon Smith" required="required">
-					</li>
-					<li>
-						<label for="email">Email</label>
-						<input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
-					</li>
-					<li>
-						<label for="message">Message</label>
-						<textarea id=message name="message" required="required"></textarea>
-					</li>
-				</ul>
-				<input type="submit" name="submit">
-			</form>
+            <!-- Start of Connect With Me Area -->
+            <section id="connect-with-me-area">
+              <div class="connect-with-me-content">
+                <h1 class="connect-with-me-header">Connect With Me</h1>
+                <hr />
+                <div id="images">
+                  <img src="assets/imgs/github.png" alt="" class="connect-with-me-photo">
+                  <img src="assets/imgs/linkedin.png" alt="" class="connect-with-me-photo">
+                  <img src="assets/imgs/stackover2.png" alt="" class="connect-with-me-photo">
+                </div>
+              </div>
+            </section>
 
-		</section>
-
-<div>
-    <section class="sidebar">
-      <div id="connect">
-        <h2>Connect with Me</h2>
-
-        <a href="#"><img src="images/github-128.png" class="social" alt="GitHub" /></a>
-        <a href="#"><img src="images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-        <a href="#"><img src="images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
-	</div>
-	</section>
-	</div>
-
-  <div class="container">
-    <div class="row">
-        <div class="col-12" id="footer">
-            <p>&copy;2017 Cynthia</p>
-        </div>
+            <!-- End of the Connect With Me Area -->
+          </div>
+        </section>
+      </div>
     </div>
-</body>
+    <!-- End of content wrap -->
+
+    <!-- Start of footer -->
+    <footer class="footer">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; Copyright 2017 Your Name
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+
 </html>
